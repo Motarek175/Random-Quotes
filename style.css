@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap");
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgba(182, 203, 170, 0.8);
+}
+
+.container {
+  border-radius: 60px;
+  padding: 40px;
+  margin: 40px;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(207, 188, 137, 1);
+}
+
+.text p,
+.author p {
+  width: 100%;
+  font-size: 40px;
+  margin: 0;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-style: normal;
+  transform: scale(0);
+  transition: transform 0.3s linear;
+}
+
+.button {
+  border-radius: 20px;
+  padding: 10px 40px;
+  cursor: pointer;
+  background-color: rgba(212, 196, 153, 1);
+}
+
+.button a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+img:nth-of-type(1) {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+}
+
+img:nth-of-type(2) {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+    border-radius: 40px;
+  }
+  .text p,
+  .author p {
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 40px 0;
+    border-radius: 20px;
+  }
+
+  .text p,
+  .author p {
+    font-size: 16px;
+  }
+}
